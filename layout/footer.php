@@ -1,0 +1,1 @@
+<footer class="footer">Its footer block</footer>
