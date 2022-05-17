@@ -63,3 +63,55 @@ footer.footer {
     font-size: 20px;
     font-weight: 500;
 }
+
+.section-registration {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-form-wrapper {
+    width: 500px;
+    padding: 20px;
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.registration-form-wrapper form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.registration-form-wrapper form label {
+    margin-bottom: 20px;
+    color: #252f3e;
+    font-size: 18px;
+    width: 100%;
+}
+
+.registration-form-wrapper form .label-input {
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #252f3e;
+    outline: none;
+}
+
+.registration-form-wrapper form .select_sex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.registration-form-wrapper form .submit-btn {
+    text-align: center;
+    background: #252f3e;
+    margin-top: 20px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}

@@ -18,7 +18,9 @@
                 <div class="container">
                     <div class="body-wrapper">
                         <?php
-                            require_once('./layout/sidebar.php');
+                            if($_GET["action"] !== 'logon') {
+                                require_once('./layout/sidebar.php');
+                            }
 
                             if(isset($_GET["action"]) && file_exists("./views/" . $_GET["action"] . ".php")) {
                                 require_once("./views/" . $_GET["action"] . ".php");

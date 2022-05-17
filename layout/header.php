@@ -13,6 +13,9 @@
                     <li class="header-list__item">
                         <a href="index.php?action=about">Про нас</a>
                     </li>
+                    <li class="header-list__item">
+                        <a href="index.php?action=logon">Реєстрація</a>
+                    </li>
                 </ul>
             </nav>
         </div>
