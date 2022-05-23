@@ -1,5 +1,4 @@
 html, body {
-    overflow: hidden;
     position: relative;
 }
 
@@ -10,6 +9,8 @@ header.header {
     left: 0;
     right: 0;
     box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+    background: white;
+    z-index: 100;
 }
 
 footer.footer {
@@ -18,6 +19,8 @@ footer.footer {
     left: 0;
     right: 0;
     height: 40px;
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
 .container {
@@ -35,11 +38,18 @@ footer.footer {
 }
 
 .body-wrapper > aside.sidebar {
-    flex: 25%;
+    width: 20%;
+    position: fixed;
+    box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+    height: 100vh;
+    margin-left: -40px;
+    padding: 20px;
 }
 
 .body-wrapper > section.section {
     flex: 75%;
+    padding: 20px 20px 20px 25%;
+
 }
 
 .header-body {
@@ -62,6 +72,25 @@ footer.footer {
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
+}
+
+.sidebar-list {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding: 0;
+}
+.sidebar-list > li {
+    padding: 10px 0;
+}
+.sidebar-list > li > a {
+    color: #252f3e;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sidebar-list > li > a:hover {
+    text-decoration: underline;
 }
 
 .section-registration {
@@ -114,4 +143,80 @@ footer.footer {
     color: white;
     padding: 5px 10px;
     cursor: pointer;
+}
+
+.section-books-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-book {
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    position: relative;
+}
+
+.card-book_img {
+    width: 120px;
+    min-width: 120px;
+    max-height: 100%;
+}
+
+.card-book_img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-book_content {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #505050;
+}
+
+.card-book_content h3, .card-book_content a {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card-book_content h5{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.card-book .btn {
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+    position: absolute;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #505050;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-book .btn.delete {
+    right: 10px;
+}
+.card-book .btn.edit {
+    right: 50px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    height: 55px;
+    margin-right: 20px;
 }

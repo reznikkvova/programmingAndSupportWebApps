@@ -12,13 +12,15 @@
 </head>
     <body>
             <?php
+                session_start();
                 require_once('./layout/header.php');
             ?>
             <section class="content">
                 <div class="container">
                     <div class="body-wrapper">
                         <?php
-                            if($_GET["action"] !== 'logon') {
+
+                            if(isset($_GET["action"]) && $_GET["action"] != "registration" && $_GET["action"] != "login") {
                                 require_once('./layout/sidebar.php');
                             }
 
