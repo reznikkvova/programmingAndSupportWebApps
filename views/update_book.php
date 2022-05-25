@@ -28,10 +28,10 @@
                     WHERE id=$id ";
 
             if ($mysqli->query($update_query) === TRUE) {
-                header("Location:http://localhost/library/index.php?action=books");
+                header("Location:/library/index.php?action=books");
             } else {
                 echo "Error: " . $update_query . "<br>" . $mysqli->error;
-                header("Location:http://localhost/library/index.php?action=update_book&id=".$id);
+                header("Location:/library/index.php?action=update_book&id=".$id);
             }
 
             $mysqli->close();

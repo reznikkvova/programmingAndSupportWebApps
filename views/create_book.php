@@ -22,10 +22,10 @@
                 ('$_is_user_admin', '$_user_id', '$_book_name', '$_book_author', '$_book_description', '$_book_img')";
 
             if ($mysqli->query($sqlValue) === TRUE) {
-                header("Location:http://localhost/library/index.php?action=books");
+                header("Location:/library/index.php?action=books");
             } else {
                 echo "Error: " . $sqlValue . "<br>" . $mysqli->error;
-                header("Location:http://localhost/library/index.php?action=create_book");
+                header("Location:/library/index.php?action=create_book");
             }
 
             $mysqli->close();

@@ -19,9 +19,9 @@
                 $_SESSION['id'] = mysqli_fetch_assoc($mysqli->query($query))["id"];
                 $_SESSION['admin'] = mysqli_fetch_assoc($mysqli->query($query))["admin"];
 
-                header("Location:http://localhost/library/index.php?action=main");
+                header("Location:/library/index.php?action=main");
             } else {
-                header("Location:http://localhost/library/index.php?action=login");
+                header("Location:/library/index.php?action=login");
             }
 
         } ?>

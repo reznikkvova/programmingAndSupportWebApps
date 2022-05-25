@@ -12,10 +12,10 @@
     $delete_query = "DELETE FROM books WHERE id=$id";
 
     if ($mysqli->query($delete_query) === TRUE) {
-        header("Location:http://localhost/library/index.php?action=books");
+        header("Location:/library/index.php?action=books");
     } else {
         echo "Error: " . $delete_query . "<br>" . $mysqli->error;
-        header("Location:http://localhost/library/index.php?action=delete_book&id=".$id);
+        header("Location:/library/index.php?action=delete_book&id=".$id);
     }
 
     $mysqli->close();

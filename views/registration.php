@@ -22,10 +22,10 @@
                 ('$_name', '$_email', '$_pass', '$_sex')";
 
                 if ($mysqli->query($sqlValue) === TRUE) {
-                    header("Location:http://localhost/library/index.php?action=logon_success");
+                    header("Location:/library/index.php?action=logon_success");
                 } else {
                     echo "Error: " . $sqlValue . "<br>" . $mysqli->error;
-                    header("Location:http://localhost/library/index.php?action=registration");
+                    header("Location:/library/index.php?action=registration");
                 }
 
                 $mysqli->close();
